@@ -19,7 +19,7 @@
 
     /*Después de ver como podemos guardar parametro input lo añadiremos a función*/
     /*data: son los datos que pasamos como parametro y status: es el estado de peticion que hemos hecho*/
-    // se podria hacer con la funcion AJAX pero he escogido una que recorra todo el fichero JSON con mas simplicidad y menos codigo
+    // se podria hacer con la funcion AJAX pero he escogido una que recorra todo el fichero JSON con mas simplicidad y menos código
 
     var url='https://api.github.com/users/' + $("#username").val() +'/repos';
     $.getJSON(url, function (r) {
@@ -48,11 +48,10 @@
 </head>
 <body>
 
-<!-- cabecera de la pagina-->
+<!-- Cabecera de nuestra página web-->
 
 <div class="jumbotron">
     <div class="container text-center">
-        <!--Título principal de la página-->
         <h1>Búsqueda de repositorios de un usuario</h1>
     </div>
 </div>
@@ -87,7 +86,7 @@
         <button type="button" class="btn btn-default" id="boton">Busca</button>
     </div>
 
-    <!-- metemos la tabla en la seccion container -->
+    <!-- Mostramos la tabla -->
 
     <table class="table" id="tabla">
         <thead>
@@ -107,7 +106,7 @@
     </table>
 </div>
 
-<!-- aqui esta el pie de pagina con información UPC-->
+<!-- Introducimos un pie de página con información sobre la autoría-->
 <div class="jumbotron text-center" style="margin-bottom:0">
     <h2>© Universitat Politècnica de Catalunya</h2>
     <h3>Disseny de Serveis i Aplicacions</h3>
